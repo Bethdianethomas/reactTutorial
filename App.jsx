@@ -1,13 +1,21 @@
 import React from 'react';
 
-var HelloWorld = React.createClass({
-  render: function(){
-    return (
-      <div>
-        Hello World!!!
-      </div>
-    )
-  }
-});
+class App extends React.Component {
+   render() {
 
-export default HelloWorld;
+   	var bethStyle = {
+   		fontSize: 100,
+   		color: '#898989'
+   	}
+
+      return (
+         <div>
+            <h1 style = {bethStyle}>Header</h1>
+            <h2>Content</h2>
+            <p>This is the content!!!</p>
+         </div>
+      );
+   }
+}
+
+export default App;
